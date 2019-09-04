@@ -1,0 +1,2 @@
+# NetCore
+Project NetCore
