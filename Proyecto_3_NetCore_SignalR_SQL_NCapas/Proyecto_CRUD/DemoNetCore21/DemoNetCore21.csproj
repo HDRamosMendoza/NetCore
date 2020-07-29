@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Contratos\Servicios\" />
+    <Folder Include="Contratos\Repositorios\" />
+    <Folder Include="Entidades\" />
+    <Folder Include="Servicios\" />
+  </ItemGroup>
+
+</Project>
