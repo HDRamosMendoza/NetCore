@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+        <link rel="stylesheet" href="~/twitter-bootstrap/css/bootstrap.css" />
+    </head>
+    <body>
+        <h1>HOLA MUNDO</h1>
+
+        <div class="table table-responsive">
+            <table id="tdl-productos" class="table table-bordered table-striped"></table>
+        </div>
+
+        <script src="~/jquery/jquery.min.js"></script>
+        <script src="~/aspnet/signalr/dist/browser/signalr.min.js"></script>
+        <script>
+
+            $(function () {
+                fnCrearTabla();
+            });
+
+            function fnCrearTabla() {
+                var tabla = $("#tbl-productos");
+                $.ajax({
+                    url: "/Home/listadoProductos",
+                    type: "GET",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.length > 0) {
+                            var thead = "<tr>";
+                            thead += "<th>Id Producto</th>";
+                            thead += "<th>Nombre</th>";
+                            thead += "<th>Precio</th>";
+                            thead += "<th>Stock</th>";
+                            thead += "</tr>";
+                            tabla.append(thead);
+
+                            var array = [];
+                            var tbody = "";
+                            for (var i = 0; i < data.length; i++) {
+                                tbody += "<tr>";
+                                tbody += "<td>" + data[i].id + "</td>";
+                                tbody += "<td>" + data[i].nombre + "</td>";
+                                tbody += "<td>" + data[i].precio + "</td>";
+                                tbody += "<td>" + data[i].stock + "</td>";
+                                tbody += "</tr>";
+                            }
+
+                            array.push(tbody);
+                            tabla.append(array.join(""));
+                        }
+                    },
+                    error: function () {
+                        console.error(e);
+                    }
+                });
+            };
+
+            var connection = new signalR.HubConnectionBuilder().withUrl("/tablaHub").build();
+            connection.on("ActualizarGrilla", function () {
+                fnCrearTabla();
+            });
+
+            connection.start().catch(function (e) {
+                console.error(e);
+            });
+
+        </script>
+    </body>
+
+</html>

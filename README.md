@@ -29,6 +29,7 @@ Project NetCore
 		2.6 En wwwroot agregamos el SignalR, Jquery, Twitter-Boostrap.
 
 			SIGNALR:
+				@microsoft/signalr@latest
 				wwwroot > agregar > agregar biblioteca de lado del cliente.
 				Seleccionamos:
 					Proveedor: unpkg
