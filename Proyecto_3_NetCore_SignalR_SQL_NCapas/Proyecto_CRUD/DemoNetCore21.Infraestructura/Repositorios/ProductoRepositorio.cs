@@ -43,7 +43,7 @@ namespace DemoNetCore21.Infraestructura.Repositorios
                     #region SqlDependency
                     cmd.Notification = null;
                     dependency = new SqlDependency();
-                    dependency.OnChange += DetectarCambios;
+                    dependency.OnChange += daniel_ramos;
                     SqlDependency.Start(connectionString);
                     #endregion
 
@@ -72,7 +72,7 @@ namespace DemoNetCore21.Infraestructura.Repositorios
             }
         }
 
-        private void DetectarCambios(object sender, SqlNotificationEventArgs e)
+        private void daniel_ramos(object sender, SqlNotificationEventArgs e)
         {
             // Detecta cambios
             if (e.Type == SqlNotificationType.Change)
@@ -82,6 +82,7 @@ namespace DemoNetCore21.Infraestructura.Repositorios
             Get();
         }
 
+      
         public void Dispose()
         {
             GC.SuppressFinalize(this);

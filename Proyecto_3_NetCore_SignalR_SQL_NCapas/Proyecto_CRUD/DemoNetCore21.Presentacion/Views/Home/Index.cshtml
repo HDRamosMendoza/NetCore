@@ -13,7 +13,7 @@
         <h1>HOLA MUNDO</h1>
 
         <div class="table table-responsive">
-            <table id="tdl-productos" class="table table-bordered table-striped"></table>
+            <table id="tbl-productos" class="table table-bordered table-striped"></table>
         </div>
 
         <script src="~/jquery/jquery.min.js"></script>
@@ -33,6 +33,9 @@
                     dataType: "json",
                     success: function (data) {
                         if (data.length > 0) {
+
+                            tabla.empty();
+
                             var thead = "<tr>";
                             thead += "<th>Id Producto</th>";
                             thead += "<th>Nombre</th>";

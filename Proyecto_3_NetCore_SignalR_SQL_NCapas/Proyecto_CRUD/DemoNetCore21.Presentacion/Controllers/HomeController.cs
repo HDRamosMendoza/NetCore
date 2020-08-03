@@ -20,7 +20,7 @@ namespace DemoNetCore21.Presentacion.Controllers
             return View();
         }
 
-        public JsonResult listadoProducto()
+        public JsonResult listadoProductos()
         {
             var data = _productoServicio.Listado().ToList();
             return Json(data);
