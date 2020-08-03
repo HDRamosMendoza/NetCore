@@ -1,0 +1,4 @@
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Infraestructura.Hubs\obj\Debug\netcoreapp2.1\DemoNetCore21.Infraestructura.Hubs.csprojAssemblyReference.cache
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Infraestructura.Hubs\obj\Debug\netcoreapp2.1\DemoNetCore21.Infraestructura.Hubs.csproj.CoreCompileInputs.cache
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Infraestructura.Hubs\obj\Debug\netcoreapp2.1\DemoNetCore21.Infraestructura.Hubs.AssemblyInfoInputs.cache
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Infraestructura.Hubs\obj\Debug\netcoreapp2.1\DemoNetCore21.Infraestructura.Hubs.AssemblyInfo.cs

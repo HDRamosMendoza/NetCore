@@ -3,7 +3,6 @@ using DemoNetCore21.Dominio.Contratos.Servicios;
 using DemoNetCore21.Dominio.Entidades;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DemoNetCore21.Dominio.Servicios
 {

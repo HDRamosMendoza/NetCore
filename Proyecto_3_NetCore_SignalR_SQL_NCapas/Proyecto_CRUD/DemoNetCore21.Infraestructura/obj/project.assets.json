@@ -207,6 +207,26 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "DemoNetCore21.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/DemoNetCore21.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DemoNetCore21.Dominio.dll": {}
+        }
+      },
+      "DemoNetCore21.Infraestructura.Hubs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/DemoNetCore21.Infraestructura.Hubs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DemoNetCore21.Infraestructura.Hubs.dll": {}
+        }
       }
     }
   },
@@ -680,10 +700,22 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "DemoNetCore21.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../DemoNetCore21.Dominio/DemoNetCore21.Dominio.csproj",
+      "msbuildProject": "../DemoNetCore21.Dominio/DemoNetCore21.Dominio.csproj"
+    },
+    "DemoNetCore21.Infraestructura.Hubs/1.0.0": {
+      "type": "project",
+      "path": "../DemoNetCore21.Infraestructura.Hubs/DemoNetCore21.Infraestructura.Hubs.csproj",
+      "msbuildProject": "../DemoNetCore21.Infraestructura.Hubs/DemoNetCore21.Infraestructura.Hubs.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "DemoNetCore21.Dominio >= 1.0.0",
+      "DemoNetCore21.Infraestructura.Hubs >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -716,7 +748,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\RepositorioGitHub\\NetCore\\Proyecto_3_NetCore_SignalR_SQL_NCapas\\Proyecto_CRUD\\DemoNetCore21.Dominio\\DemoNetCore21.Dominio.csproj": {
+              "projectPath": "D:\\RepositorioGitHub\\NetCore\\Proyecto_3_NetCore_SignalR_SQL_NCapas\\Proyecto_CRUD\\DemoNetCore21.Dominio\\DemoNetCore21.Dominio.csproj"
+            },
+            "D:\\RepositorioGitHub\\NetCore\\Proyecto_3_NetCore_SignalR_SQL_NCapas\\Proyecto_CRUD\\DemoNetCore21.Infraestructura.Hubs\\DemoNetCore21.Infraestructura.Hubs.csproj": {
+              "projectPath": "D:\\RepositorioGitHub\\NetCore\\Proyecto_3_NetCore_SignalR_SQL_NCapas\\Proyecto_CRUD\\DemoNetCore21.Infraestructura.Hubs\\DemoNetCore21.Infraestructura.Hubs.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

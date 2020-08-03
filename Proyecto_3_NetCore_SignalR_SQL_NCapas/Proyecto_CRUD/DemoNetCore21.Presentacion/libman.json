@@ -3,13 +3,6 @@
   "defaultProvider": "unpkg",
   "libraries": [
     {
-      "library": "@aspnet/signalr@1.0.3",
-      "destination": "wwwroot/aspnet/signalr/",
-      "files": [
-        "dist/browser/signalr.min.js"
-      ]
-    },
-    {
       "provider": "cdnjs",
       "library": "jquery@3.3.1",
       "destination": "wwwroot/jquery/"
@@ -26,6 +19,21 @@
       "files": [
         "js/bootstrap.min.js",
         "css/bootstrap.min.css"
+      ]
+    },
+    {
+      "library": "@aspnet/signalr@1.0.3",
+      "destination": "wwwroot/@aspnet/signalr/",
+      "files": [
+        "dist/browser/signalr.min.js"
+      ]
+    },
+    {
+      "library": "@microsoft/signalr@latest",
+      "destination": "wwwroot/@microsoft/signalr/",
+      "files": [
+        "dist/browser/signalr.js",
+        "dist/browser/signalr.min.js"
       ]
     }
   ]

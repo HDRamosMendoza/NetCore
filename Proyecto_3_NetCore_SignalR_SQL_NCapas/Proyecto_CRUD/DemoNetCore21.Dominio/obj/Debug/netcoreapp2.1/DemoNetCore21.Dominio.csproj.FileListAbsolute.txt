@@ -1,0 +1,9 @@
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Dominio\bin\Debug\netcoreapp2.1\DemoNetCore21.Dominio.deps.json
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Dominio\bin\Debug\netcoreapp2.1\DemoNetCore21.Dominio.dll
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Dominio\bin\Debug\netcoreapp2.1\DemoNetCore21.Dominio.pdb
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Dominio\obj\Debug\netcoreapp2.1\DemoNetCore21.Dominio.csprojAssemblyReference.cache
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Dominio\obj\Debug\netcoreapp2.1\DemoNetCore21.Dominio.csproj.CoreCompileInputs.cache
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Dominio\obj\Debug\netcoreapp2.1\DemoNetCore21.Dominio.AssemblyInfoInputs.cache
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Dominio\obj\Debug\netcoreapp2.1\DemoNetCore21.Dominio.AssemblyInfo.cs
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Dominio\obj\Debug\netcoreapp2.1\DemoNetCore21.Dominio.dll
+D:\RepositorioGitHub\NetCore\Proyecto_3_NetCore_SignalR_SQL_NCapas\Proyecto_CRUD\DemoNetCore21.Dominio\obj\Debug\netcoreapp2.1\DemoNetCore21.Dominio.pdb

@@ -9,13 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Dominio", "2 Dominio", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Infraestructura", "3 Infraestructura", "{6812CB99-B87F-421B-BF74-55BB96E6670D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoNetCore21.Dominio", "DemoNetCore21.Dominio\DemoNetCore21.Dominio.csproj", "{31DCA2E2-A1C1-47D8-A8CC-F22112FC149A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoNetCore21.Dominio", "DemoNetCore21.Dominio\DemoNetCore21.Dominio.csproj", "{31DCA2E2-A1C1-47D8-A8CC-F22112FC149A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoNetCore21.Infraestructura", "DemoNetCore21.Infraestructura\DemoNetCore21.Infraestructura.csproj", "{5541D230-53A5-42E9-A368-0C706CB7A505}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoNetCore21.Infraestructura", "DemoNetCore21.Infraestructura\DemoNetCore21.Infraestructura.csproj", "{5541D230-53A5-42E9-A368-0C706CB7A505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoNetCore21.Infraestructura.Hubs", "DemoNetCore21.Infraestructura.Hubs\DemoNetCore21.Infraestructura.Hubs.csproj", "{8880D531-BD96-489B-9F1B-346A13A2A834}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoNetCore21.Infraestructura.Hubs", "DemoNetCore21.Infraestructura.Hubs\DemoNetCore21.Infraestructura.Hubs.csproj", "{8880D531-BD96-489B-9F1B-346A13A2A834}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoNetCore21.Presentacion", "DemoNetCore21.Presentacion\DemoNetCore21.Presentacion.csproj", "{95A207A6-A3E5-420F-8FFA-B3BCAF72E676}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoNetCore21.Presentacion", "DemoNetCore21.Presentacion\DemoNetCore21.Presentacion.csproj", "{95A207A6-A3E5-420F-8FFA-B3BCAF72E676}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
