@@ -88,3 +88,48 @@ Project NetCore
 		HUBS
 
 		Fuente: https://www.youtube.com/watch?v=N4vv14nfp8M
+
+	- Proyecto 4. NetCore | Dapper | MySQL
+		Es un proyecto creado con VISUAL STUDIO 2019. NetCore 3.1
+		Dapper. Es un micro ORM. Tiene una desventajas en la escalabilidad por ejemplo tienes que hacer las consultas tal cual que estan
+		en SQL pero es mucho mas rapido que EntityFramework en su performance.
+
+		1. Creamos un proyecto con WebApllication ASP.Net Core 3.1. Con WebApi vacío.
+		2. MysqlData. Dependencias > Administrador NuGet >Examinar.
+			- Mysql.data
+			- Oracle.ManagedDataAccess.Core
+		3. Intalamos DAPPER. Dependencias > Administrador NuGet >Examinar.
+			- Dapper.
+		4. Instalamos Postman. Para realiza solucitudes y probar nuestros servicios.
+		5. Creamos la carpeta MODELS
+		6. MODELS > CLASE. Clase "Thing"
+		public class Thing
+		{
+			public int Id {get; set;}
+			public string Name {get; set;}
+			public string Description {get; set;}
+		}
+		7. En la carpeta CONTROLLERS > CONTROLADOR > CONTROLADOR DE API: EN BLANCO con nombre "ThingController".
+			No se tiene una carpeta VIEWS por qué es un proyecto API.
+
+		using MySqk.Data.MySqlClient;
+		public class ThingController: ControllerBase
+		{
+			private string connection = @"Server=localhost; Database=pruebas; Uid=root;";
+			[HttpGet]
+			public IActionResult Get()
+			{
+				//List<Models.Thing> lst = new List<Models.Thing>();
+				// Creamos un IEnumerable para se meta automatizamente.
+				IEnumerable<Models.Thing> lst = null;
+				using (var db = new MySqlConnection(_connection))
+				{
+					var sql = "SELECT id,name, description from thing";
+					//return Ok("HolaMundo"); 
+					lst = db.Query<Models.Thing>(sql);
+				}
+				return Ok(lst);
+			}
+		}
+
+		
