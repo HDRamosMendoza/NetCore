@@ -9,7 +9,8 @@ namespace MVC_API_DAPPER.Controllers
     [ApiController]
     public class ThingController : ControllerBase
     {
-		private string _connection = @"Server=localhost; Database=pruebas; Uid=root;";
+		// MYSQL
+		private string _connection = @"Server=localhost; Database=DemoNetCore21DB; Uid=root; Pwd=root;";
 
 		[HttpGet]
 		public IActionResult Get()
@@ -19,7 +20,7 @@ namespace MVC_API_DAPPER.Controllers
 			IEnumerable<Models.Thing> lst = null;
 			using (var db = new MySqlConnection(_connection))
 			{
-				var sql = "SELECT id,name, description from thing";
+				var sql = "SELECT id,name, description from Thing";
 				//return Ok("HolaMundo"); 
 				lst = db.Query<Models.Thing>(sql);
 			}
@@ -33,7 +34,7 @@ namespace MVC_API_DAPPER.Controllers
 			using (var db = new MySqlConnection(_connection))
 			{
 				//los @ evita lo sqlInjection
-				var sql = "insert into thing(name, description)"+
+				var sql = "insert into Thing(name, description)"+
 					" values(@name, @description)";
 				//return Ok("HolaMundo"); 
 				result = db.Execute(sql, model);
@@ -54,7 +55,7 @@ namespace MVC_API_DAPPER.Controllers
 			using (var db = new MySqlConnection(_connection))
 			{
 				//los @ evita lo sqlInjection
-				var sql = "UPDATE thing set name=@name, description=@description" +
+				var sql = "UPDATE Thing set name=@name, description=@description" +
 					" where id=@id";
 				result = db.Execute(sql, model);
 				/* POR POSTMAN
@@ -75,7 +76,7 @@ namespace MVC_API_DAPPER.Controllers
 			using (var db = new MySqlConnection(_connection))
 			{
 				//los @ evita lo sqlInjection
-				var sql = "DELETE from thing where id=@id";
+				var sql = "DELETE from Thing where id=@id";
 				result = db.Execute(sql, model);
 				/* POR POSTMAN
 					{
