@@ -98,6 +98,7 @@ Project NetCore
 		2. MysqlData. Dependencias > Administrador NuGet >Examinar.
 			- Mysql.data
 			- Oracle.ManagedDataAccess.Core
+			- Systema.Data.SqlClient
 		3. Intalamos DAPPER. Dependencias > Administrador NuGet >Examinar.
 			- Dapper.
 		4. Instalamos Postman. Para realiza solucitudes y probar nuestros servicios.
