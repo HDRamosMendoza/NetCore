@@ -89,16 +89,17 @@ Project NetCore
 
 		Fuente: https://www.youtube.com/watch?v=N4vv14nfp8M
 
-	- Proyecto 4. NetCore | Dapper | MySQL
-		Es un proyecto creado con VISUAL STUDIO 2019. NetCore 3.1
-		Dapper. Es un micro ORM. Tiene una desventajas en la escalabilidad por ejemplo tienes que hacer las consultas tal cual que estan
-		en SQL pero es mucho mas rapido que EntityFramework en su performance.
+- Proyecto 4. NetCore | Dapper | MySQL
+	Es un proyecto creado con VISUAL STUDIO 2019. NetCore 3.1
+	Dapper. Es un micro ORM. Tiene una desventajas en la escalabilidad por ejemplo tienes que hacer las consultas tal cual que estan
+	en SQL pero es mucho mas rapido que EntityFramework en su performance.
 
 		1. Creamos un proyecto con WebApllication ASP.Net Core 3.1. Con WebApi vacío.
 		2. MysqlData. Dependencias > Administrador NuGet >Examinar.
 			- Mysql.data
 			- Oracle.ManagedDataAccess.Core
 			- Systema.Data.SqlClient
+			- Npgsql
 		3. Intalamos DAPPER. Dependencias > Administrador NuGet >Examinar.
 			- Dapper.
 		4. Instalamos Postman. Para realiza solucitudes y probar nuestros servicios.
